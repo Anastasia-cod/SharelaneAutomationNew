@@ -17,7 +17,7 @@ namespace SharelaneAutomation.Page
         By ConfirmationMessageLocator = By.CssSelector(".confirmation_message");
         By EmailSignUpUserLocator = By.XPath("//td/b");
 
-        public SignUpPage(WebDriver driver) : base(driver)
+        public SignUpPage(IWebDriver driver) : base(driver)
         {
         }
 

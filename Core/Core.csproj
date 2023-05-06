@@ -8,5 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.9.0" />
+    <PackageReference Include="Selenium.Support" Version="4.9.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="112.0.5615.4900" />
+    <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.27.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Selenium\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Selenium\" />
   </ItemGroup>
 </Project>

@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
-    <RunsettingsFilePath>$(MSBuildProjectDirectory)\HeadlessBrowser.runsettings</RunsettingsFilePath>
+    <RunsettingsFilePath>$(MSBuildProjectDirectory)\ChromeBrowser.runsettings</RunsettingsFilePath>
   </PropertyGroup>
 
   <ItemGroup>

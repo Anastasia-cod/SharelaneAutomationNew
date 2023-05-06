@@ -5,9 +5,9 @@ namespace SharelaneAutomation.Page
 {
     public abstract class BasePage
     {
-        public WebDriver Driver { get; set; }
+        public IWebDriver Driver { get; set; }
 
-        public BasePage(WebDriver driver)
+        public BasePage(IWebDriver driver)
         {
             Driver = driver;
         }

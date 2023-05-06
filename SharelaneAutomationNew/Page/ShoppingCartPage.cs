@@ -14,7 +14,7 @@ namespace SharelaneAutomation.Page
         By TotalUsdLocator = By.XPath("//tr[2]/td[7]");
         By ProceedToCheckoutButtonLocator = By.XPath("//input[@value='Proceed to Checkout']");
 
-        public ShoppingCartPage(WebDriver driver) : base(driver)
+        public ShoppingCartPage(IWebDriver driver) : base(driver)
         {
         }
 

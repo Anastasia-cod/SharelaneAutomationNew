@@ -7,7 +7,6 @@ using Core.Utilities;
 
 namespace SharelaneAutomation.Tests
 {
-    [TestFixture]
     public class LoginTest : BaseTest
     {
         [Test]

@@ -8,7 +8,7 @@ namespace SharelaneAutomation.Page
     {
         By LogoutLinkLocator = By.XPath("//a[text()='Logout']");
 
-        public UserPersonalAccountPage(WebDriver driver) : base(driver)
+        public UserPersonalAccountPage(IWebDriver driver) : base(driver)
         {
             Assert.IsTrue(CheckLogoutLink());
         }

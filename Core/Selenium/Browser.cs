@@ -46,6 +46,9 @@ namespace Core.Selenium
                 case "firefox":
                     driver = new FirefoxDriver();
                     break;
+                default:
+                    driver = new ChromeDriver();
+                    break;
             }
 
             driver.Manage().Window.Maximize();

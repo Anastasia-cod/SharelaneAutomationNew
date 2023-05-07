@@ -16,9 +16,9 @@ namespace SharelaneAutomation.Tests
         [SetUp]
         public void SetUp()
         {
-            LoginPage = new LoginPage(Driver);
-            SignUpPage = new SignUpPage(Driver);
-            Driver.Navigate().GoToUrl("https://www.sharelane.com/cgi-bin/main.py");
+            LoginPage = new LoginPage();
+            SignUpPage = new SignUpPage();
+            Browser.Instance.Driver.Navigate().GoToUrl("https://www.sharelane.com/cgi-bin/main.py");
         }
 
         [TearDown]

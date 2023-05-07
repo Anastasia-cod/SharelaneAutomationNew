@@ -1,4 +1,5 @@
 ﻿using System;
+using Core.Selenium;
 using OpenQA.Selenium;
 
 namespace SharelaneAutomation.Page
@@ -7,9 +8,9 @@ namespace SharelaneAutomation.Page
     {
         public IWebDriver Driver { get; set; }
 
-        public BasePage(IWebDriver driver)
+        public BasePage()
         {
-            Driver = driver;
+            Driver = Browser.Instance.Driver;
         }
     }
 }

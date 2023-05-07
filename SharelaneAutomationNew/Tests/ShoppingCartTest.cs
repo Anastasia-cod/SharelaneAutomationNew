@@ -13,9 +13,9 @@ namespace SharelaneAutomation.Tests
         [SetUp]
         public void SetUp()
         {
-            MainPage = new MainPage(Driver);
-            BookInfoPage = new BookInfoPage(Driver);
-            ShoppingCartPage = new ShoppingCartPage(Driver);
+            MainPage = new MainPage();
+            BookInfoPage = new BookInfoPage();
+            ShoppingCartPage = new ShoppingCartPage();
             string email = SignUpPage.GetEmailSignUpUser_FillInOnlyRequiredFields();
             string password = "1111";
             LoginPage.Login(email, password);

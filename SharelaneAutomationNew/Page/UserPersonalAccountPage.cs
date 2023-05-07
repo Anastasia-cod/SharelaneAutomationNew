@@ -1,4 +1,5 @@
 ﻿using System;
+using Core.Selenium;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
@@ -8,7 +9,7 @@ namespace SharelaneAutomation.Page
     {
         By LogoutLinkLocator = By.XPath("//a[text()='Logout']");
 
-        public UserPersonalAccountPage(IWebDriver driver) : base(driver)
+        public UserPersonalAccountPage() : base()
         {
             Assert.IsTrue(CheckLogoutLink());
         }

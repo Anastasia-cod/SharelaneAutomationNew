@@ -19,7 +19,7 @@ namespace SharelaneAutomation.Tests
 
             //Action
             LoginPage.Login(email, standartUser.Password);
-            var userPersonalAccountPage = new UserPersonalAccountPage(Driver);
+            var userPersonalAccountPage = new UserPersonalAccountPage();
 
             //Assert
             Assert.IsTrue(userPersonalAccountPage.CheckLogoutLink());

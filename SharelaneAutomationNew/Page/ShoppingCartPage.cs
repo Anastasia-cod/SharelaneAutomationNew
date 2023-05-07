@@ -1,4 +1,5 @@
 ﻿using System;
+using Core.Selenium;
 using OpenQA.Selenium;
 
 namespace SharelaneAutomation.Page
@@ -14,7 +15,7 @@ namespace SharelaneAutomation.Page
         By TotalUsdLocator = By.XPath("//tr[2]/td[7]");
         By ProceedToCheckoutButtonLocator = By.XPath("//input[@value='Proceed to Checkout']");
 
-        public ShoppingCartPage(IWebDriver driver) : base(driver)
+        public ShoppingCartPage() : base()
         {
         }
 
@@ -56,8 +57,8 @@ namespace SharelaneAutomation.Page
 
         public void AddBookToShoppingCart(string bookName, int quantity)
         {
-            new MainPage(Driver).SearchBook(bookName);
-            new BookInfoPage(Driver).ClickAddToCardButton();
+            new MainPage().SearchBook(bookName);
+            new BookInfoPage().ClickAddToCardButton();
             ClickShoppingCartLink();
             SetQuantity(quantity);
             ClickUpdateButton();

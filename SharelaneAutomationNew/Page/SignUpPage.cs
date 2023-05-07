@@ -1,4 +1,5 @@
 ﻿using System;
+using Core.Selenium;
 using OpenQA.Selenium;
 
 namespace SharelaneAutomation.Page
@@ -17,7 +18,7 @@ namespace SharelaneAutomation.Page
         By ConfirmationMessageLocator = By.CssSelector(".confirmation_message");
         By EmailSignUpUserLocator = By.XPath("//td/b");
 
-        public SignUpPage(IWebDriver driver) : base(driver)
+        public SignUpPage() : base()
         {
         }
 

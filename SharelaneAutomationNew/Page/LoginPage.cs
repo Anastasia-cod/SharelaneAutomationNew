@@ -10,7 +10,7 @@ namespace SharelaneAutomation.Page
         By LoginButtonLocator = By.XPath("(//input)[5]");
         By ErrorMessageLocator = By.ClassName("error_message");
 
-        public LoginPage(IWebDriver driver) : base(driver)
+        public LoginPage() : base()
         {
         }
 

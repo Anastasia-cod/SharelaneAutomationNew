@@ -30,18 +30,22 @@ namespace Core.Selenium
             switch (TestContext.Parameters.Get("Browser"))
             {
                 case "chrome":
-            
-                    if(bool.Parse(TestContext.Parameters.Get("Headless")!))
-                    {
-                        ChromeOptions options = new ChromeOptions();
-                        options.AddArgument("--headless");
-                        driver = new ChromeDriver(options);
-                    }
-                    else
-                    {
-                        driver = new ChromeDriver();
-                    }
-                    
+                    driver = new ChromeDriver();
+                    break;            
+                    //if(bool.Parse(TestContext.Parameters.Get("headless")!))
+                    //{
+                    //    ChromeOptions options = new ChromeOptions();
+                    //    options.AddArgument("--headless");
+                    //    driver = new ChromeDriver(options);
+                    //}
+                    //else
+                    //{
+                    //    driver = new ChromeDriver();
+                    //}
+                case "headless":
+                    ChromeOptions options = new ChromeOptions();
+                    options.AddArgument("--headless");
+                    driver = new ChromeDriver(options);                                      
                     break;
                 case "firefox":
                     driver = new FirefoxDriver();

@@ -7,7 +7,7 @@ namespace SharelaneAutomation.Page
     {
         By AddToCardButtonLocator = By.XPath("//img[@src='../images/add_to_cart.gif']");
 
-        public BookInfoPage(IWebDriver driver) : base(driver)
+        public BookInfoPage() : base()
         {
         }
 

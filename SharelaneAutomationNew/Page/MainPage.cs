@@ -9,7 +9,7 @@ namespace SharelaneAutomation.Page
         By SearchButtonLocator = By.XPath("//input[@value='Search']");
         By NothingFoundMessageLocator = By.CssSelector(".confirmation_message");
 
-        public MainPage(IWebDriver driver) : base(driver)
+        public MainPage() : base()
         {
         }
 
@@ -28,7 +28,7 @@ namespace SharelaneAutomation.Page
             SetBookNameInSearchInput(bookName);
             ClickSearchButton();
 
-            return new BookInfoPage(Driver);
+            return new BookInfoPage();
         }
 
         public string GetErrorMessage()

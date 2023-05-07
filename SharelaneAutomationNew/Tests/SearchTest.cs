@@ -12,8 +12,8 @@ namespace SharelaneAutomation.Tests
         [SetUp]
         public void SetUp()
         {
-            MainPage = new MainPage(Driver);
-            BookInfoPage = new BookInfoPage(Driver);
+            MainPage = new MainPage();
+            BookInfoPage = new BookInfoPage();
         }
 
         [Test]

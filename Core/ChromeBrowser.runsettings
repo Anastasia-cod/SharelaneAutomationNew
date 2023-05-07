@@ -3,6 +3,7 @@
     <!-- Parameters used by tests as runtime -->
     <TestRunParameters>
         <Parameter name="Browser" value="chrome" />
+        <Parameter name="Headless" value="false" />
         <Parameter name="UserName" value="testnewemailqa@mail.ru" />
         <Parameter name="UserPassword" value="1111" />
 

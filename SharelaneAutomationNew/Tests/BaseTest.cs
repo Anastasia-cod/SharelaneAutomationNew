@@ -9,7 +9,6 @@ namespace SharelaneAutomation.Tests
 {
     public class BaseTest
     {
-        public IWebDriver Driver { get; set; } = Browser.Instance.Driver;
         public LoginPage LoginPage { get; set; }
         public SignUpPage SignUpPage { get; set; }
 
@@ -18,7 +17,8 @@ namespace SharelaneAutomation.Tests
         {
             LoginPage = new LoginPage();
             SignUpPage = new SignUpPage();
-            Browser.Instance.Driver.Navigate().GoToUrl("https://www.sharelane.com/cgi-bin/main.py");
+            //Browser.Instance.Driver.Navigate().GoToUrl("https://www.sharelane.com/cgi-bin/main.py");
+            Browser.Instance.NavigateToUrl("https://www.sharelane.com/cgi-bin/main.py");
         }
 
         [TearDown]
